@@ -33,6 +33,7 @@ Developed by [Eduardo Nakatsuka](https://www.linkedin.com/in/eduardo-nakatsuka) 
   5. Have a talk with the team who did the specifications in order to have a better understanding for the whole project.
   6. TypeScript.
   7. Define better usage of localStorage for pagination||queries.
+  8. Define with the team what linting utility and patterns to follow.
 
 ## Considerations
 
