@@ -7,7 +7,7 @@ Developed by [Eduardo Nakatsuka](https://www.linkedin.com/in/eduardo-nakatsuka) 
 
 # Getting started
   - [Instalation](#instalation)
-  - [Routes](#routes)
+  - [Live site](#live-site)
   - [Improvements](#improvements)
   - [Considerations](#considerations)
 
