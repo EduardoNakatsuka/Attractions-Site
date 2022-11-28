@@ -32,6 +32,7 @@ Developed by [Eduardo Nakatsuka](https://www.linkedin.com/in/eduardo-nakatsuka) 
   4. Remove hardcoded colors from code, export them to a theme object.
   5. Have a talk with the team who did the specifications in order to have a better understanding for the whole project.
   6. TypeScript.
+  7. Define better usage of localStorage for pagination||queries.
 
 ## Considerations
 
@@ -41,6 +42,7 @@ When I started thinking about how to do the parsing the TSV it really reminded m
 Now about the improvements part:
 - I did only two tests, and I feel like this part could have gotten more love, unfortunately while doing the tests I had to spend more time refactoring some code due to some issues with vitest and the code I had previously written (which is why TDD would have saved me time debugging and fixing it) more on https://github.com/EduardoNakatsuka/aukai-gaussy/commit/d8bd63408146018a35c009a4de7285b4709032f4#diff-9bd6a60e5c0492eba8dd9e41ef4185609ac1d80f9e8196f14785e7cdb6a440f8R7-R15
 - My attractions state management is not so great at the current state, there are methods creating, managing, deleting state. Which is not great, it NEEDS to be refactored in a observer/event based state management way. This is my next top priority in this code, of course having a talk with the team would be great too. I spent too much time at first optimizing the reading, mapping and merging of the files. I created in a separate gist a way of reading the files in batches/stream so we would only load one or another file based on what we needed to display in the datatable, it turned out to be slower (compared to fetching as a whole, mapping and merging) with the given files so I left it out of scope for now, it would be interesting to understand the needs and specially what sizes those TSV and JSON files would be. At larger TSV files (100k+ lines) I saw a considerable memory decrease parsing it with stream.
+- Create an encapsulation for the localStorage, personally I am not a fan of calling localStorage mid code, also feel like there should be a "handler" or "service" that you call instead. Also could ditch the usage of localStorage in favor of URL querystring.
 - Refactor on how the first load happens. I am not happy with it, I feel like I could have made an object to hold all methods to start, not left them in a file only.
 - Having a talk with the team, this project would be nice if ported to TypeScript. The aforementioned state management would look beautiful with it.
 - I also have some questions:
