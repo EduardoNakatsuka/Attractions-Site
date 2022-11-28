@@ -21,6 +21,8 @@ Developed by [Eduardo Nakatsuka](https://www.linkedin.com/in/eduardo-nakatsuka) 
 # Live site
 
   - I left a running live site under: https://resilient-nougat-1195dd.netlify.app/ just in case.
+  ![lighthouse](https://user-images.githubusercontent.com/43795015/204203261-55c60e66-3790-4c8b-83bc-6d28c6beacdf.jpeg)
+
 
 ## Improvements
 
